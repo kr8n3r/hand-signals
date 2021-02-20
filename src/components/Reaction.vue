@@ -81,8 +81,9 @@ export default {
     appearance: none;
     border: 0;
     background: transparent;
-    padding: 5px 5px 0 5px;
+    padding: 10px 5px 5px 5px;
     position: relative;
+    background:white;
   }
   
   img {
@@ -93,11 +94,13 @@ export default {
   .tooltip {
     display: none;
     position: absolute;
-    background: lightskyblue;
+    background: rgba(255, 255, 255, 0.644);
     padding: 5px;
     top: 5px;
+    left: 105%;
     z-index: 2;
     width: 100px;
+    border-radius: 4px;
   }
 
   button:hover .tooltip,
@@ -105,10 +108,4 @@ export default {
     display: block;
   }
 
-  button:nth-child(odd) .tooltip{
-    left: 8.5em;
-  }
-  button:nth-child(even) .tooltip{
-    left: 4.5em;
-  }
 </style>
